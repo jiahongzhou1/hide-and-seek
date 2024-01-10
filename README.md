@@ -7,7 +7,7 @@ Creazione di un' app che ci permetta di "giocare" a nascondino condivendo la nos
 
 - [Leaflet](https://leafletjs.com/examples.html) -> per creare mappe interattive
 
-
+-[Socket-IO](https://socket.io/docs/v4/rooms/) -> per creare le room
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/BSHlEvcz)
 
