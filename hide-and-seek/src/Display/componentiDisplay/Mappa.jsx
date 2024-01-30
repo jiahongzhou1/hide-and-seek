@@ -3,7 +3,7 @@ import "leaflet/dist/leaflet.css";
 import { useEffect, useState } from "react";
 import { MapContainer, TileLayer } from "react-leaflet";
 import { useSocket } from "../../SocketProvider";
-import { Marker, Popup } from "react-leaflet";
+import { Marker, Popup, useMap } from "react-leaflet";
 
 function Mappa({ playerCords }) {
   const [playersInSameRoom, setPlayersInSameRoom] = useState([]);
@@ -13,6 +13,10 @@ function Mappa({ playerCords }) {
     setPlayersInSameRoom(playerCords);
     console.log("coc", playersInSameRoom);
   }, [playerCords]);
+
+  useEffect(() => {
+    SetViewComponent();
+  }, []);
 
   return (
     <>
@@ -32,7 +36,9 @@ function Mappa({ playerCords }) {
             key={index}
             position={[player[1].latitude, player[1].longitude]}
           >
-            <Popup>{player[0]}</Popup>
+            <Popup>
+              {player[0] === socket.id ? "YOU" + player[0] : player[0]}
+            </Popup>
           </Marker>
         ))}
       </MapContainer>
