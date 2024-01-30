@@ -32,7 +32,7 @@ function Mappa({ playerCords }) {
             key={index}
             position={[player[1].latitude, player[1].longitude]}
           >
-            <Popup>A popup for the marker</Popup>
+            <Popup>{player[0]}</Popup>
           </Marker>
         ))}
       </MapContainer>

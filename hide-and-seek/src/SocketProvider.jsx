@@ -1,7 +1,7 @@
 import { useState, createContext, useContext, useEffect } from "react";
 import { io } from "socket.io-client";
 
-const URL = "https://back-end1-ailn.onrender.com/";
+const URL = "https://back-end-exw9.onrender.com";
 
 export const SocketContext = createContext(null);
 
@@ -28,7 +28,7 @@ export const SocketProvider = ({ children }) => {
   }, []);
 
   return (
-    <SocketContext.Provider value={{ socket, connectSocket}}>
+    <SocketContext.Provider value={{ socket, connectSocket }}>
       {children}
     </SocketContext.Provider>
   );
