@@ -1,0 +1,14 @@
+.backGrownd{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/fotor-ai-2024012318831.jpg);
+    background-size: cover;
+    background-position: center; 
+    
+}
+
+.tastiGioco {
+    display: grid;
+    place-items: center; 
+    height: 100vh;
+}

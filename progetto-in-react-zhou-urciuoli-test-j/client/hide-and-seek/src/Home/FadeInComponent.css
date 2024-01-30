@@ -1,0 +1,91 @@
+.fade-in-component {
+  opacity: 1;
+  display: block;
+  animation-duration: 1s;
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+}
+
+.fade-out {
+  animation-name: fadeOut;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.bottoneGioca {
+  font-size: 6rem;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.514);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.buttons > div {
+  width: 250px;
+  height: 75px;
+}
+.buttons > div > .buttonAlone {
+  width: 250px;
+  height: 75px;
+  font-size: 30px;
+}
+.buttons > div > .buttonWithInput {
+  width: fit-content;
+}
+.buttons > div > button {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+}
+
+.pulsante {
+  display: flex;
+  align-items: center;
+}
+.pulsante > input {
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgb(107, 107, 107);
+  color: black;
+}
+.pulsante > input::placeholder {
+  color: black;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+  }

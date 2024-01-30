@@ -1,0 +1,36 @@
+.backGrownd {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/fotor-ai-2024012318831.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+
+}
+
+.Player-Holder {
+    width: 25%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.514);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h2 {
+font-size: 200%;
+}
+
+.Player-Holder > ol > li  {
+    font-size: 150%;
+}
+
+.startButton {
+    width: 12%;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.514);
+}
